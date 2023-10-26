@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prensa Digital</title>
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../js/clima.js"></script>
+    <script type="text/javascript" src="../js/dolar.js"></script>
+    <script type="module" src="../js/menu.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <a class="header-nav" href="../index.html">
+            <img class="logo" src="../img/logo.webp" alt="Logo: Prensa Digital" class="img-logo"></a>
+        <nav class="secciones_nav">
+            <div class="menu-button">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../pages/ciencia.html">Ciencia</a></li>
+                <li><a href="../pages/economia.html">Economía</a></li>
+                <li><a href="../pages/deportes.html">Deportes</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <!-- Acá dejo espacio para las APIs. En el archivo json puse un ejemplo pero no termino de hacerlo funcionar-->
+    <div class="api-bar">
+        <div class="header-content">
+            <div class="seccionesApis">
+                <div class="scrolling-text">
+                    Dolar Compra:<span id="blueCompra"></span>
+                    Dolar Venta: <span id="blueVenta"></span>
+                    <span id="nombre-ciudad"></span>
+                    <span id="temperatura"></span>
+                    <span id="humedad"></span>
+                    <span id="clima"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner">
+        <main>
+            <article>
+                <div id="contenedor-noticias"></div>
+                <script type="module" src="../js/tar_ciencia.js"></script>
+            </article>
+
+        </main>
+    </div>
+
+    <footer id="footer" style="display: none;">
+        <div class="footer-content">
+            <div class="footerlogo">
+                <img src="../img/logo.webp" alt="Logo de la Página">
+            </div>
+            <div class="secciones">
+                <ul>
+
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Acerca de Nosotros</a></li>
+                    <li><a href="../pages/terminos.html">Terminos</a></li>
+                    <li><a href="../pages/contacto.html" target="_blank"onclick="window.open('../pages/contacto.html', 'NuevaVentana', 'width=400,height=600'); return false;">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+                <a href="../pages/soon.html" target="_blank"onclick="window.open('../pages/soon.html', 'NuevaVentana', 'width=400,height=300'); return false;"><img src="../icon/facebook.webp" alt="Facebook"></a>
+                <a href="../pages/soon.html" target="_blank"onclick="window.open('../pages/soon.html', 'NuevaVentana', 'width=400,height=300'); return false;"><img src="../icon/twitter.webp" alt="Twitter"></a>
+                <a href="../pages/soon.html" target="_blank"onclick="window.open('../pages/soon.html', 'NuevaVentana', 'width=400,height=300'); return false;"><img src="../icon/instagram.webp" alt="Instagram"></a>
+                <a href="../pages/soon.html" target="_blank"onclick="window.open('../pages/soon.html', 'NuevaVentana', 'width=400,height=300'); return false;"><img src="../icon/youtube.webp" alt="Youtube"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Simular un retraso antes de mostrar el footer
+        setTimeout(function() {
+            document.getElementById("footer").style.display = "block";
+        }, 300);
+    </script>
+</body>
+
+</html>

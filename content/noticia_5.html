@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prensa Digital</title>
+    <link rel="icon" type="image/x-icon" href="../icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script type="text/javascript" src="../js/clima.js"></script>
+    <script type="text/javascript" src="../js/dolar.js"></script>
+    <script type="module" src="../js/menu.js"></script>
+</head>
+
+<body>
+    <header>
+        <a class="header-nav" href="../index.html">
+            <img class="logo" src="../img/logo.webp" alt="Logo: Prensa Digital" class="img-logo"></a>
+        <nav class="secciones_nav">
+            <div class="menu-button">
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="/pages/ciencia.html">Ciencia</a></li>
+                <li><a href="/pages/economia.html">Economía</a></li>
+                <li><a href="/pages/deportes.html">Deportes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Acá dejo espacio para las APIs. En el archivo json puse un ejemplo pero no termino de hacerlo funcionar-->
+    <div class="api-bar">
+        <div class="header-content">
+            <div class="seccionesApis">
+                <div class="scrolling-text">
+                    Dolar Compra:<span id="blueCompra"></span>
+                    Dolar Venta: <span id="blueVenta"></span>
+                    <span id="nombre-ciudad"></span>
+                    <span id="temperatura"></span>
+                    <span id="humedad"></span>
+                    <span id="clima"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteiner">
+        <main class="content">
+            <article>
+
+                <header class="artheader">
+                    <h1>Histórico Encuentro: El Partido de Fútbol en la Cima del Everest</h1>
+                    <img src="../img/partido-de-futbol_Mesa de trabajo 1.webp"
+                        alt="En la imagen, se ve a dos equipos de fútbol, uno vestido de azul y otro de rojo, en pleno partido. Detrás de ellos, se levanta majestuoso el Monte Everest con su característica capa de nieve, creando un escenario épico.">
+                    <p>En un hito histórico del deporte, los equipos de fútbol Real Madrid y Barcelona se enfrentaron en
+                        la cima del Monte Everest, a 8,848 metros sobre el nivel del mar, desafiando condiciones
+                        extremas y la falta de oxígeno. El Real Madrid se llevó la victoria en un emocionante partido
+                        3-2, demostrando que el deporte puede superar barreras físicas y geográficas, y los
+                        organizadores planean más eventos desafiantes en el futuro.</p>
+                </header>
+                <main>
+                    <p>En un evento que quedará grabado en la historia del deporte, dos equipos de fútbol se enfrentaron
+                        en el lugar más inusual e imponente posible: la cima del Monte Everest. Este emocionante partido
+                        se llevó a cabo a una altitud de 8,848 metros sobre el nivel del mar, rompiendo todos los
+                        récords previos y desafiando las condiciones extremas.</p>
+                    <p>El encuentro enfrentó a dos equipos legendarios: el Real Madrid y el Barcelona. Los jugadores,
+                        equipados con trajes especiales y botas de alta montaña, lucharon contra la falta de oxígeno y
+                        las temperaturas extremadamente frías para jugar un partido que duró 90 minutos completos. Los
+                        balones, especialmente diseñados para soportar las condiciones de la montaña, flotaron en el
+                        aire más tiempo debido a la menor densidad del aire, lo que añadió un desafío adicional a los
+                        jugadores.</p>
+                    <p>El Real Madrid se llevó la victoria 3-2 en un emocionante partido que mantuvo en vilo a los
+                        fanáticos de todo el mundo. Los goles se marcaron en el último minuto, y la celebración en la
+                        cima del Everest fue verdaderamente impresionante.</p>
+                    <p>Este evento deportivo sin precedentes no solo demostró la pasión y la determinación de los
+                        jugadores, sino también la capacidad del deporte para superar barreras físicas y geográficas.
+                        Los organizadores ya están planeando futuros partidos en lugares igualmente desafiantes, lo que
+                        promete llevar el deporte a nuevos horizontes.</p>
+
+
+                </main>
+            </article>
+
+        </main>
+
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footerlogo">
+                <img src="../img/logo.webp" alt="Logo de la Página">
+            </div>
+            <div class="secciones">
+                <ul>
+
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Acerca de Nosotros</a></li>
+                    <li><a href="../pages/terminos.html">Terminos</a></li>
+                    <li><a href="../pages/contacto.html" target="_blank"onclick="window.open('../pages/contacto.html', 'NuevaVentana', 'width=400,height=600'); return false;">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="redes-sociales">
+                <a href="../pages/soon.html" target="_blank"onclick="window.open('../pages/soon.html', 'NuevaVentana', 'width=400,height=300'); return false;"><img src="../icon/facebook.webp" alt="Facebook"></a>
+                <a href="../pages/soon.html" target="_blank"onclick="window.open('../pages/soon.html', 'NuevaVentana', 'width=400,height=300'); return false;"><img src="../icon/twitter.webp" alt="Twitter"></a>
+                <a href="../pages/soon.html" target="_blank"onclick="window.open('../pages/soon.html', 'NuevaVentana', 'width=400,height=300'); return false;"><img src="../icon/instagram.webp" alt="Instagram"></a>
+                <a href="../pages/soon.html" target="_blank"onclick="window.open('../pages/soon.html', 'NuevaVentana', 'width=400,height=300'); return false;"><img src="../icon/youtube.webp" alt="Youtube"></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

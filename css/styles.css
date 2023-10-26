@@ -1,0 +1,406 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: auto;
+  background-color: #dbe2ef;
+  color: #1e1e1e;
+  width: 80vw;
+  max-width: 1300px;
+}
+strong {
+  font-weight: bold;
+  color: #112d4e;
+  text-decoration: underline;
+}
+h1 {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+li a:hover {
+  /* Estilo de menu y footer */
+  color: #3f72af;
+}
+
+p {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* Estilos para el logo en el header */
+header {
+  display: flex;
+  background-color: #112d4e;
+  color: #1e1e1e;
+  flex-shrink: 0;
+}
+
+.header-nav {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/*Transformación en el logo utilizando CSS*/
+.logo {
+  justify-content: left;
+  transition: transform 0.1s ease;
+}
+
+.logo:hover {
+  transform: scale(
+    1.2
+  ); /* Escala el logo al 10% del tamaño original al pasar el cursor sobre él */
+}
+
+/* Estilos para las secciones en el header */
+.secciones_nav {
+  margin: 10px;
+  text-align: center;
+  word-break: break-all;
+}
+.secciones_nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap; /* Para que los elementos puedan envolverse en una nueva línea cuando no quepan en el ancho */
+}
+.secciones_nav li {
+  margin-left: 20px;
+}
+
+aside.publicidad {
+  padding-left: 15px;
+  margin-left: 15px;
+  padding: 20px;
+  float: right;
+  width: 200px;
+  height: 100%;
+  background-color: #176b87;
+}
+
+section.noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.noticia {
+  flex-basis: calc(50% - 20px);
+  margin: 10px;
+  text-align: center;
+}
+
+/* ESTILO PARA ARTICULOS */
+
+.conteiner {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de la disposición a una columna */
+  align-items: center; /* Centra horizontalmente */
+}
+
+.artheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dbe2ef;
+}
+.artheader img {
+  width: 50vw;
+  border-radius: 2%;
+}
+.artheader p {
+  font-style: oblique;
+  color: #4f4f4f;
+  font-size: small;
+}
+
+
+/* //////////contacto//////// */
+
+
+.contacto {
+  display: flex;
+  flex-direction: column; /* Cambia la dirección de la disposición a una columna */
+  align-items: center; /* Centra horizontalmente */
+
+}
+
+/* //////////FOOTER//////// */
+
+footer {
+  background-color: #112d4e;
+  color: #f9f7f7;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1300px;
+  margin: 110 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.secciones ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Para que los elementos puedan envolverse en una nueva línea cuando no quepan en el ancho */
+}
+
+.secciones li {
+  margin: 0 20px;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.redes-sociales a img {
+  width: 35px;
+  height: 35px;
+}
+.redes-sociales a:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último icono para evitar espacio adicional */
+}
+
+.footerlogo img {
+  width: 130px; /* Ancho deseado en píxeles */
+  height: auto; /* El valor "auto" ajusta automáticamente la altura según el ancho */
+}
+
+/* Estilos para las líneas separadoras */
+.noticias hr {
+  border: 1px solid #176b87; /* Color de las líneas */
+  margin: 20px 0; /* Espacio entre las líneas */
+}
+
+/* Estilos para la primera sección en el header */
+.first-section {
+  margin-right: 20px; /* Espacio entre la primera sección y la siguiente */
+}
+
+.noticia-destacada-image {
+  width: 90%; /* Ancho deseado en píxeles */
+  border-radius: 50px;
+  padding: 15px;
+  height: 15rem; /* El valor "auto" ajusta automáticamente la altura según el ancho */
+}
+.api-bar {
+  background-color: #3f72af; /* Fondo otro color */
+  color: #f9f7f7; /* Este creo que no aplica acá sino en api bar a */
+  padding: 3px;
+  text-align: center;
+}
+.api-bar strong {
+  color: #f9f7f7;
+}
+
+.seccionesApis {
+    overflow: hidden;
+}
+
+.scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scrollText 20s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/*Para ver el clima cuando funcione la API*/
+#nombre-ciudad {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+
+#temperatura {
+    margin-left: 10px;
+    margin-right: 80px;
+  }
+#blueCompra {
+    margin-left: 10px;
+    margin-right: 80px;
+}
+#blueVenta {
+    margin-left: 10px;
+    margin-right: 80px;
+}
+#clima {
+    margin-left: 10px;
+    margin-right: 80px;
+}
+#clima {
+  margin-left: 10px;
+  margin-right: 80px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #eeeeee;
+}
+
+a:visited {
+  color: #eeeeee;
+  border-bottom: 0px;
+}
+
+#contenedor-noticias {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.tarjeta-noticia {
+  padding: 10px;
+  margin: 10px;
+  flex-basis: calc(30% - 2%);
+  text-align: center;
+  box-sizing: border-box;
+}
+.tarjeta-noticia:hover {
+  background-color: #f9f7f7;
+  border-radius: 3%;
+}
+
+.tarjeta-noticia img {
+  border-radius: 3%;
+  max-width: 100%;
+  height: auto;
+}
+
+.tarjeta-noticia h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.tarjeta-noticia a {
+  text-decoration: none;
+  color: #1e1e1e;
+}
+
+.tarjeta-noticia a:hover {
+  color: #3f72af;
+}
+
+/* Estilos para el botón de hamburguesa */
+.menu-button {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.bar {
+  width: 100%;
+  height: 4px;
+  background-color: #ccc;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Estilos generales para el menú de navegación */
+.secciones_nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.secciones_nav li {
+  margin: 0 20px;
+}
+
+/* Media Query para cambiar a 2 columnas en pantallas más pequeñas */
+@media (max-width: 768px) {
+  .tarjeta-noticia {
+    flex-basis: calc(
+      42% - 2%
+    ); /* Ajusta el ancho para 2 columnas en pantallas más pequeñas */
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg);
+    top: -10px;
+  }
+
+  .header-content {
+    display: none;
+  }
+
+  .secciones_nav ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #112d4e;
+    position: absolute;
+    top: 50px;
+    right: 15%;
+    width: 70%;
+  }
+
+  .secciones_nav ul.show-menu {
+    display: flex;
+  }
+
+  .secciones_nav li {
+    margin: 10px 0;
+  }
+}
+
+/* Media Query para cambiar a 1 columna en pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .tarjeta-noticia {
+    flex-basis: calc(
+      100% - 2%
+    ); /* Ajusta el ancho para 1 columna en pantallas muy pequeñas */
+  }
+}
